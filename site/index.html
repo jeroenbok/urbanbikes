@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Urban Bikes Amsterdam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/styles.css" rel="stylesheet">
+    
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+	
+  </head>
+
+  <body>
+
+    <div class="container">
+		Klik op de kleuren!
+		<div class="config">
+			Frame:
+			<div class="frame-black box-black" colorid="img/frame/1.png"></div>
+			<div class="frame-red box-red"  colorid="img/frame/2.png"></div>
+			Achterwiel:
+			<div class="backtire-black box-black" colorid="img/backtire/1.png"></div>
+			<div class="backtire-red box-red"  colorid="img/backtire/2.png"></div>
+			Voorwiel:
+			<div class="fronttire-black box-black" colorid="img/fronttire/1.png"></div>
+			<div class="fronttire-red box-red"  colorid="img/fronttire/2.png"></div>
+			Ketting:
+			<div class="chain-black box-black" colorid="img/chain/1.png"></div>
+			<div class="chain-red box-red"  colorid="img/chain/2.png"></div>
+			Zadel:
+			<div class="saddle-black box-black" colorid="img/saddle/1.png"></div>
+			<div class="saddle-red box-red"  colorid="img/saddle/2.png"></div>
+			Stuur:
+			<div class="bar-black box-black" colorid="img/bar/1.png"></div>
+			<div class="bar-red box-red"  colorid="img/bar/2.png"></div>
+			Drager:
+			<div class="drager-black box-black" colorid="img/drager/1.png"></div>
+			<div class="drager-red box-red"  colorid="img/drager/2.png"></div>
+		</div>
+		<div id="bike">
+					<img id="drager" src="img/drager/1.png" style="z-index:1; position:absolute;margin-left:411px;margin-top:87px">
+					<img id="backtire" src="img/backtire/1.png" style="z-index:2; position:absolute;margin-top:108px">
+					<img id="fronttire" src="img/fronttire/1.png" style="z-index:3; position:absolute;margin-left:362px;margin-top:108px">
+					<img id="frame" src="img/frame/1.png" style="z-index:4; position:absolute;margin-left:119px;margin-top:11px">
+					<img id="chain" src="img/chain/1.png" style="z-index:5; position:absolute;margin-left:109px;margin-top:207px">
+					<img id="saddle" src="img/saddle/1.png" style="z-index:6; position:absolute;margin-left:155px;margin-top:0px">
+					<img id="bar" src="img/bar/1.png" style="z-index:7; position:absolute;margin-left:393px;margin-top:10px">
+				</div>
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+
+	<script>
+		applyColorSwapOnClick(".frame-black", "#frame")
+		applyColorSwapOnClick(".frame-red", "#frame")
+		applyColorSwapOnClick(".backtire-black", "#backtire")
+		applyColorSwapOnClick(".backtire-red", "#backtire")
+		applyColorSwapOnClick(".fronttire-black", "#fronttire")
+		applyColorSwapOnClick(".fronttire-red", "#fronttire")
+		applyColorSwapOnClick(".chain-black", "#chain")
+		applyColorSwapOnClick(".chain-red", "#chain")
+		applyColorSwapOnClick(".saddle-black", "#saddle")
+		applyColorSwapOnClick(".saddle-red", "#saddle")
+		applyColorSwapOnClick(".bar-black", "#bar")
+		applyColorSwapOnClick(".bar-red", "#bar")
+		applyColorSwapOnClick(".drager-black", "#drager")
+		applyColorSwapOnClick(".drager-red", "#drager")
+		
+		function applyColorSwapOnClick(colorItem, item) {
+			$(colorItem).click(function() {
+			  	swapColor(item, colorItem)
+			});
+		}
+		
+		function swapColor(item, sourceOfColorId) {
+			var src = $(sourceOfColorId).attr("colorid");
+            $(item).attr("src", src)
+		}
+		
+	</script>
+    
+
+  </body>
+</html>

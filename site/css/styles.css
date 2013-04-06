@@ -1,0 +1,22 @@
+div .config {
+	float:left;
+}
+
+div #bike {
+	width:594px;
+	height:342px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+div .box-red {
+	background-color:red;
+	width:20px;
+	height:20px;
+}
+
+div .box-black {
+	background-color:black;
+	width:20px;
+	height:20px;
+}
