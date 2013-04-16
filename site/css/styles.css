@@ -1,5 +1,38 @@
+body {
+	background-color: #d4d6d7;
+}
+
+.navbar-inner {
+	padding-left:300px;
+	padding-right:300px;
+}
+
+/*.navbar .brand {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	padding: 0;
+	margin: 0 10px 0 0;
+	background: url("../img/logo.png") no-repeat;
+}*/
+
+.navbar .brand { 
+	max-height: 40px; 
+	overflow: visible;
+	padding-top: 0;
+	padding-bottom: 0; 
+	float:right;
+
+
+}
+
+div .container {
+	background-color: #d4d6d7
+}
+
 div .config {
 	float:left;
+	margin-top: 50px;
 }
 
 div #bike {
@@ -7,6 +40,7 @@ div #bike {
 	height:342px;
 	margin-left:auto;
 	margin-right:auto;
+	margin-top: 50px;
 }
 
 div .box-red {
