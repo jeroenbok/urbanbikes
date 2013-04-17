@@ -30,27 +30,49 @@ div .container {
 	background-color: #d4d6d7
 }
 
-div .config {
-	float:left;
-	margin-top: 50px;
-}
-
 div #bike {
 	width:594px;
 	height:342px;
 	margin-left:auto;
 	margin-right:auto;
-	margin-top: 50px;
+	margin-top: 200px;
+}
+
+.config {
+	width: 120px;
+	font-size: 1.5em;
+	float:left;
+	margin-top: 150px;
+	list-style: none;
+}
+
+.config li {
+	height: 60px;
+	border: 1px solid rgba(189,189,189,1);
+	border-bottom: 0px;
+	padding: 4px;
+	background-color: rgba(255,255,255, 0.6);
+}
+
+.config li.last {
+	border-bottom: 1px solid rgba(189,189,189,1);
+}
+
+
+
+
+
+.box {
+	width:30px;
+	height:30px;
+	margin-top: 5px;
+	display:inline-block;
 }
 
 div .box-red {
 	background-color:red;
-	width:20px;
-	height:20px;
 }
 
 div .box-black {
 	background-color:black;
-	width:20px;
-	height:20px;
 }
